@@ -1,8 +1,10 @@
 <div align="center">
+  <img src="resources/giant_squid_icon_topdown_v3.png" alt="Squidward3n" width="120" />
   <h1>Squidward3n</h1>
   <p>Desktop command center for orchestrating multiple AI coding agents working in parallel on Azure DevOps tickets and pull requests.</p>
 </div>
 
+---
 
 ## Overview
 
@@ -47,7 +49,29 @@ Squidward3n manages the full lifecycle of AI-assisted development — from assig
 - **Anthropic API key** configured in Claude Code
 - **Azure DevOps** account with a Personal Access Token
 - **Git** installed and available on PATH
-- **Node.js 22+** (for development only)
+
+## Coming soon 
+
+Squidward3n currently supports Azure DevOps and Claude Code. We're working on making it platform-agnostic so you can use it with your existing tools.
+
+**DevOps Platforms**
+- GitHub (Issues, Projects, Pull Requests)
+- GitLab (Issues, Merge Requests)
+- Jira + Bitbucket
+
+**AI Agents**
+- OpenAI Codex
+- Google Gemini
+- Amazon Q Developer
+- Locally run models
+
+**Code Editors**
+- VS Code (current)
+- JetBrains IDEs
+- Cursor
+- Windsurf
+
+Have a platform you'd like to see supported? Open an issue and let us know.
 
 ## Installation
 
@@ -59,41 +83,8 @@ Download the latest release for your platform from the [Releases](https://github
 | Windows | `.exe` (NSIS installer) |
 | Linux | `.AppImage` |
 
-## Development
+## License
 
-```bash
-# Install dependencies
-npm install
-
-# Start in development mode
-npm run dev
-
-# Run tests
-npm test
-
-# Type check
-npm run typecheck
-
-# Build for your platform
-npm run build:mac
-npm run build:win
-npm run build:linux
-Tech Stack
-Electron + React 19 + TypeScript
-SQLite via better-sqlite3 + Drizzle ORM
-Claude Agent SDK for in-process agent management
-Azure DevOps REST API for tickets, PRs, and board management
-Architecture
-
-Renderer (React) → Preload API → IPC Handlers → Services → Repositories → SQLite
-                                                    ↓
-                                            Claude Agent SDK
-                                          (in-process MCP tools)
-Services are stateless — config passed per call
-Repositories are the only layer that touches the database
-MCP tools run in-process (no external server)
-Zod validates all IPC boundary input
-License
 Copyright (c) 2026 Rob Scholey. All rights reserved.
 
 This software is proprietary. Unauthorized copying, modification, or distribution is prohibited.
