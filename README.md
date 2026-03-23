@@ -3,7 +3,6 @@
   <p>Desktop command center for orchestrating multiple AI coding agents working in parallel on Azure DevOps tickets and pull requests.</p>
 </div>
 
----
 
 ## Overview
 
