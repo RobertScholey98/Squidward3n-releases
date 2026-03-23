@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="resources/giant_squid_icon_topdown_v3.png" alt="Squidward3n" width="120" />
   <h1>Squidward3n</h1>
   <p>Desktop command center for orchestrating multiple AI coding agents working in parallel on Azure DevOps tickets and pull requests.</p>
 </div>
