@@ -1,11 +1,12 @@
 <div align="center">
   <h1>Squidward3n</h1>
-  <p>Desktop command center for orchestrating multiple AI coding agents working in parallel on Azure DevOps tickets and pull requests.</p>
 </div>
 
 ## Overview
 
-Squidward3n manages the full lifecycle of AI-assisted development — from assigning Azure DevOps work items to Claude Code agents, through code review and PR creation. Run multiple agents in parallel, each in their own cloned repo, with full visibility and control from a single dashboard.
+A desktop Agent orchestration center for conducting multiple AI coding agents working in parallel on Azure DevOps tickets and pull requests across multiple code repos.
+
+Squidward3n manages the full lifecycle of AI-assisted development — from assigning Azure DevOps work items to Claude Code agents, through code review and PR creation. Run multiple agents in parallel, each in their own cloned repo, with full visibility, configurable automation and control from a single dashboard.
 
 ## Features
 
